@@ -1,0 +1,51 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #fca311;
+    padding: 2em;
+}
+
+.contact h2 {
+    text-align: center;
+}
+
+.contact h3 {
+    font-style: normal;
+    text-align: center;
+    font-size: 25px;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.contact div {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.contact div a img {
+    width: 45px;
+}
+
+@media(max-width:800px) {
+    .contact div {
+        width: 90%;
+    }
+
+    .contact div a img {
+        width: 35px;
+    }
+}
+
+@media(max-width:540px) {
+    .contact div {
+        width: 90%;
+    }
+
+    .contact div a img {
+        width: 28px;
+    }
+}

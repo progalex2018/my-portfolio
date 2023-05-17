@@ -1,0 +1,68 @@
+/* Home page specific css */
+.welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid#fca311;
+    padding: 2em;
+}
+
+.welcome h3 {
+    font-style: normal;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 2rem;
+}
+
+.welcome h4 {
+    margin-top: 2rem;
+}
+
+.welcome ul {
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.welcome li {
+    color: #fffcf2;
+    font-size: 16px;
+    font-style: normal;
+    text-align: center;
+    line-height: 25px;
+}
+
+.welcome p {
+    width: 80%;
+    color: #fffcf2;
+    padding: 1rem 1rem;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 25px;
+}
+
+
+@media (max-width:800px) {
+    .welcome h3 {
+        font-size: 22px;
+    }
+
+    .welcome ul {
+        flex-direction: column;
+    }
+
+    .welcome li {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:540px) {
+    .welcome h3 {
+        font-size: 20px;
+    }
+
+    .welcome li {
+        font-size: 12px;
+    }
+}

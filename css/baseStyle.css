@@ -1,0 +1,442 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #00040b;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#scroll {
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    background-color: #fca311;
+    display: none;
+    border-radius: 10px
+}
+
+#scroll span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -10px;
+    margin-top: -14px;
+    height: 0;
+    width: 0;
+    border: 10px solid transparent;
+    border-bottom-color: #e5e5e5;
+}
+
+#scroll:hover {
+    background-color: #000000;
+    opacity: 1;
+}
+
+.maindiv {
+    margin: 2em;
+    background-color: #14213d;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 1300px;
+}
+
+.mainheader {
+    margin-top: 1em;
+    margin-bottom: 2em;
+    display: flex;
+    padding: 15px 25px;
+}
+
+.mainheader>img {
+    max-width: 150px;
+    border-radius: 15px;
+}
+
+.headerdiv {
+    flex-basis: 600px;
+    flex-grow: 1;
+    margin: 0 1em;
+}
+
+.headerdiv a {
+    display: inline-block;
+    margin: 20px 10px;
+}
+
+.headerdiv img {
+    /* margin: 20px 10px; */
+    max-width: 35px;
+}
+
+.navbar {
+    /* width: 100%; */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navbar a {
+    color: #fffcf2;
+    font-weight: 300;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    flex-basis: 200px;
+    flex-grow: 1;
+    /* border-right: 1px solid #fca311; */
+    border: 1px solid #fca311;
+    background-color: #101727;
+    border-radius: 30px;
+    transition: all 200ms ease-in-out;
+    margin: 0 1em;
+    padding: 0.8em;
+}
+
+.navbar a:hover {
+    /* color: #eb5e28; */
+    /* color: #fca311; */
+    background-color: #fca311;
+}
+
+/* .navbar a:last-child {
+    border: none;
+} */
+
+.hamburger {
+    display: none;
+    position: absolute;
+    top: 3em;
+    right: 4em;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #e5e5e5;
+}
+
+
+h1 {
+    /* color: #fffcf2; */
+    color: #e5e5e5;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 35px;
+    font-weight: 700;
+    color: #e5e5e5;
+    padding-bottom: 1rem;
+}
+
+h3 {
+    /* color: #ccc5b9; */
+    color: #ffffff;
+    font-size: 20px;
+    font-style: italic;
+}
+
+h4 {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+main {
+    border-radius: 10px;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin: 3em 0;
+}
+
+p a {
+    color: #fca311;
+    text-decoration: none;
+}
+
+a:is(:link, :active, :visited).active {
+    background-color: #fca311;
+}
+
+.footer {
+    margin: 1em 2em;
+    padding: 0.5em;
+    background-color: #14213d;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 1300px;
+}
+
+.footer p {
+    color: #e5e5e5;
+    font-weight: 200;
+    letter-spacing: 2px;
+}
+
+@media(max-width: 1200px) {
+    .headerdiv h1 {
+        font-size: 35px;
+    }
+
+    .headerdiv h3 {
+        font-size: 15px;
+    }
+}
+
+@media (max-width:800px) {
+    img {
+        width: 100px;
+    }
+
+    /* .navbar {
+        display: none;
+    } */
+
+    .navbar {
+        background-color: #101727;
+        position: fixed;
+        left: -100%;
+        top: 6rem;
+        flex-direction: column;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .navbar a {
+        flex-basis: auto;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .navbar.active {
+        left: 0;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    main {
+        margin: 1em 0;
+    }
+
+    .mainheader {
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 0;
+    }
+
+    .headerdiv {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .headerdiv h1 {
+        font-size: 25px;
+    }
+
+    .headerdiv h3 {
+        margin-top: 5px;
+        font-size: 15px;
+    }
+
+    .headerdiv img {
+        max-width: 25px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    p,
+    li {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:540px) {
+    .headerdiv h1 {
+        font-size: 18px;
+    }
+
+    .headerdiv h3 {
+        font-size: 13px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    p,
+    li {
+        font-size: 12px;
+    }
+}
