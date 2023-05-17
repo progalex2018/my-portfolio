@@ -180,7 +180,7 @@ body {
 }
 
 .maindiv {
-    margin: 2em;
+    margin: 2em 0.5em;
     background-color: #14213d;
     border-radius: 10px;
     width: 100%;
@@ -223,7 +223,7 @@ body {
 
 .navbar a {
     color: #fffcf2;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 18px;
     text-align: center;
     text-decoration: none;
@@ -242,6 +242,7 @@ body {
 .navbar a:hover {
     /* color: #eb5e28; */
     /* color: #fca311; */
+    color: #101727;
     background-color: #fca311;
 }
 
@@ -253,7 +254,7 @@ body {
     display: none;
     position: absolute;
     top: 3em;
-    right: 4em;
+    right: 2em;
 }
 
 .bar {
@@ -306,6 +307,7 @@ p a {
 }
 
 a:is(:link, :active, :visited).active {
+    color: #101727;
     background-color: #fca311;
 }
 
@@ -428,15 +430,10 @@ a:is(:link, :active, :visited).active {
     }
 
     .headerdiv h3 {
-        font-size: 13px;
+        font-size: 14px;
     }
 
     h2 {
         font-size: 26px;
-    }
-
-    p,
-    li {
-        font-size: 12px;
     }
 }

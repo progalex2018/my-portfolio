@@ -4,10 +4,10 @@
     justify-content: center;
     align-items: center;
     border-top: 1px solid#fca311;
-    padding: 2em;
+    padding: 2em 0;
 }
 
-.resume h3 {
+/* .resume h3 {
     font-style: normal;
     text-align: center;
     font-size: 25px;
@@ -16,7 +16,7 @@
 
 .resume h4 {
     margin-top: 2rem;
-}
+} */
 
 .resume li {
     margin-left: 25px;
@@ -63,9 +63,5 @@
 @media (max-width:540px) {
     .resume h3 {
         font-size: 20px;
-    }
-
-    .resume li {
-        font-size: 12px;
     }
 }
