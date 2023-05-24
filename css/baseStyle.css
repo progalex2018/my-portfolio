@@ -146,7 +146,7 @@ html {
 body {
     background-color: #00040b;
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: center;
 }
 
@@ -312,12 +312,14 @@ a:is(:link, :active, :visited).active {
 }
 
 .footer {
-    margin: 1em 2em;
-    padding: 0.5em;
-    background-color: #14213d;
-    border-radius: 10px;
-    width: 100%;
-    max-width: 1300px;
+    /* margin-top: 0em ; */
+    padding: 1em;
+    background-color: #101727;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    /* width: 100%; */
+    flex-basis: 100%;
+    /* max-width: 1300px; */
 }
 
 .footer p {
